@@ -1,0 +1,81 @@
+/* ========= start navbar ========== */
+nav .nav-link{
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 500;
+}
+nav .nav-link.active{
+    color: #ff7a00 !important;
+}
+/* ========= end navbar ========== */
+
+/* ========= start header ========== */
+header section:first-child{
+    height: 60vh;
+    background-image: url("../image/home-bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+header section:last-child{
+    min-height: 40vh;
+}
+
+/* ========= end header ========== */
+.logo{
+    margin-bottom: 60px;
+    text-align: center;  
+}
+.logo h2{
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 500;
+    letter-spacing: 20px; 
+    text-decoration: underline;
+    text-decoration-color: #ff7a00;
+    text-underline-offset: -10px;
+}
+
+/* ========= start about ========== */
+.about .image{
+    position: relative;
+    z-index: 1;
+    left: -7%;
+    top: -7%;
+    
+}
+.about .image::after{
+    position: absolute;
+    z-index: -1;
+    top: 7%;
+    left: 7%;
+    width: 100%;
+    height: 100%;
+    background-color: #ff7a00;
+    content: "";
+
+}
+.about ul li a{
+    background-color: #6c757d;
+    width: 50px;
+    height: 40px;
+}
+.about ul li a:hover{
+    background-color: #ff7a00;
+}
+/* ========= end about ========== */
+
+/* ========= start project ========== */
+.project .image{
+    cursor: pointer;
+}
+/* ========= end project ========== */
+
+/* ========= start contact ========== */
+textarea{
+    height: 150px;
+    resize: none;
+}
+input:focus,textarea:focus{
+    border-color: #ff7a00 !important;
+}
+/* ========= end contact ========== */
